@@ -8,6 +8,8 @@ Thank you for the invitation to do this amazing task! I hope this assignment wil
 
 To install and use this package, you can follow these simple steps:
 
+Rename env.example file to ".env" in the root folder.
+
 **Run these commands**:
 
 ```bash
