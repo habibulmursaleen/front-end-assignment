@@ -14,7 +14,7 @@ You should spend about 2-3 hours on this assignment, don't worry if you can't fi
 
 Add styling to the popular movie list. You do not need to focus too much on pretty design but the styling should be functional and responsive.
 You can try to recreate the style below or make your own.
-![Heimdall_movies](./images/heimdall_movies.png)
+![Heimdall_movies](./src/assets/heimdall_movies.png)
 
 ### Exercise 2: Search and Filter
 

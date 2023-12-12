@@ -1,22 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import MovieList from './MovieList'
-import SearchBar from './SearchBar'
-import { fetchPopularMovies } from './api'
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "../src/components/Home";
+import SingleMovieDetails from "./components/movie/SingleMovieDetails";
+import "./styles/App.css";
 
 const App: React.FC = () => {
-    const [movies, setMovies] = useState<any[]>([])
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:movieId" element={<SingleMovieDetails />} />
+      </Routes>
+    </Router>
+  );
+};
 
-    useEffect(() => {
-        fetchPopularMovies().then((data) => setMovies(data.results))
-    }, [])
-
-    return (
-        <div>
-            <h1>Heimdall Movies</h1>
-            <SearchBar />
-            <MovieList movies={movies} />
-        </div>
-    )
-}
-
-export default App
+export default App;
